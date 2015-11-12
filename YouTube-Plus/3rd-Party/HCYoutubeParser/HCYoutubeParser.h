@@ -12,10 +12,10 @@
 //  distribute, sublicense, and/or sell copies of the Software, and to
 //  permit persons to whom the Software is furnished to do so, subject to
 //  the following conditions:
-//  
+//
 //  The above copyright notice and this permission notice shall be
 //  included in all copies or substantial portions of the Software.
-//  
+//
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 //  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 //  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -26,12 +26,13 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef enum {
-    YouTubeThumbnailDefault,
-    YouTubeThumbnailDefaultMedium,
-    YouTubeThumbnailDefaultHighQuality,
-    YouTubeThumbnailDefaultMaxQuality
+  YouTubeThumbnailDefault,
+  YouTubeThumbnailDefaultMedium,
+  YouTubeThumbnailDefaultHighQuality,
+  YouTubeThumbnailDefaultMaxQuality
 } YouTubeThumbnail;
 
 @interface HCYoutubeParser : NSObject
@@ -79,7 +80,7 @@ typedef enum {
  @param thumbnailSize the wanted size of the thumbnail
  */
 + (NSURL *)thumbnailUrlForYoutubeURL:(NSURL *)youtubeURL
-                         thumbnailSize:(YouTubeThumbnail)thumbnailSize;
+                       thumbnailSize:(YouTubeThumbnail)thumbnailSize;
 
 /**
  Method for retreiving a thumbnail for wanted youtube url
