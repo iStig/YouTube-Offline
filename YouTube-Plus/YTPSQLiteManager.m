@@ -32,7 +32,7 @@
 }
 
 - (void)checkAndCreateDatabase {
-    self.databaseName = @"YTP-DB.sql";
+    self.databaseName = @"YTP-DB.sqlite";
     NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = [documentPaths objectAtIndex:0];
     self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];

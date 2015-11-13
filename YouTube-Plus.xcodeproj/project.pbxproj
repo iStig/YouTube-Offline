@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6212EDAC1BF5911700B22F89 /* YTP-DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6212EDAB1BF5911700B22F89 /* YTP-DB.sqlite */; };
 		C009F95C18E2065E00EDB1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95B18E2065E00EDB1AF /* Foundation.framework */; };
 		C009F95E18E2065E00EDB1AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95D18E2065E00EDB1AF /* CoreGraphics.framework */; };
 		C009F96018E2065E00EDB1AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95F18E2065E00EDB1AF /* UIKit.framework */; };
@@ -30,7 +31,6 @@
 		D4CBEE331A196B3F00BBF43E /* YTPSQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CBEE321A196B3F00BBF43E /* YTPSQLiteManager.m */; };
 		D4CBEE351A196B6B00BBF43E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CBEE341A196B6B00BBF43E /* libsqlite3.0.dylib */; };
 		D4CBEE391A196DB400BBF43E /* YTPVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CBEE381A196DB400BBF43E /* YTPVideo.m */; };
-		D4CBEE3C1A197D9500BBF43E /* YTP-DB.sql in Resources */ = {isa = PBXBuildFile; fileRef = D4CBEE3B1A197D9500BBF43E /* YTP-DB.sql */; };
 		D4CBEE3E1A19906900BBF43E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CBEE3D1A19906900BBF43E /* MediaPlayer.framework */; };
 		D4FAC1EB1A1ADE1E00208FE5 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAC1EA1A1ADE1E00208FE5 /* ActionViewController.m */; };
 		D4FAC1ED1A1ADE1E00208FE5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FAC1EC1A1ADE1E00208FE5 /* MainInterface.storyboard */; };
@@ -62,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6212EDAB1BF5911700B22F89 /* YTP-DB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YTP-DB.sqlite"; sourceTree = "<group>"; };
 		C009F95818E2065E00EDB1AF /* YouTube-Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube-Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009F95B18E2065E00EDB1AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C009F95D18E2065E00EDB1AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,7 +104,6 @@
 		D4CBEE341A196B6B00BBF43E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D4CBEE371A196DB400BBF43E /* YTPVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPVideo.h; sourceTree = "<group>"; };
 		D4CBEE381A196DB400BBF43E /* YTPVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPVideo.m; sourceTree = "<group>"; };
-		D4CBEE3B1A197D9500BBF43E /* YTP-DB.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YTP-DB.sql"; sourceTree = "<group>"; };
 		D4CBEE3D1A19906900BBF43E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D4FAC1E51A1ADE1E00208FE5 /* YouTube-Plus-Ext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YouTube-Plus-Ext.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FAC1E81A1ADE1E00208FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 		D4CBEE3A1A197D9500BBF43E /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				D4CBEE3B1A197D9500BBF43E /* YTP-DB.sql */,
+				6212EDAB1BF5911700B22F89 /* YTP-DB.sqlite */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -380,8 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48FA8AF1A1AD3D90031F310 /* YTPTableViewCell.xib in Resources */,
-				D4CBEE3C1A197D9500BBF43E /* YTP-DB.sql in Resources */,
 				C009F97418E2065E00EDB1AF /* Images.xcassets in Resources */,
+				6212EDAC1BF5911700B22F89 /* YTP-DB.sqlite in Resources */,
 				C009F96618E2065E00EDB1AF /* InfoPlist.strings in Resources */,
 				C009F96F18E2065E00EDB1AF /* Main.storyboard in Resources */,
 			);
@@ -539,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouTube-Plus/YouTube-Plus-Prefix.pch";
 				INFOPLIST_FILE = "YouTube-Plus/YouTube-Plus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qmangostudio.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -556,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YouTube-Plus/YouTube-Plus-Prefix.pch";
 				INFOPLIST_FILE = "YouTube-Plus/YouTube-Plus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qmangostudio.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
