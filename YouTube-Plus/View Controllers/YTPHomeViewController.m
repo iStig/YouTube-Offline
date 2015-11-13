@@ -44,13 +44,19 @@
     
     NSArray *URLs = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
     self.docDirectoryURL = [URLs objectAtIndex:0];
-    
+  
+    NSURLSession *session = [NSURLSession sharedSession];
+ 
+  if (!session) {
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"com.YouTubePlus"];
     sessionConfiguration.HTTPMaximumConnectionsPerHost = 5;
     
     self.session = [NSURLSession sessionWithConfiguration:sessionConfiguration
                                                  delegate:self
                                             delegateQueue:nil];
+  }
+    
+
     
     self.barButtonItemAdd = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"add_youtube_video"] style:UIBarButtonItemStylePlain target:self action:@selector(downloadNewYouTubeVideo)];
     self.navigationItem.rightBarButtonItem = self.barButtonItemAdd;

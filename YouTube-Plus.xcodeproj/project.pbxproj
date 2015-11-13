@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6212EDAC1BF5911700B22F89 /* YTP-DB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6212EDAB1BF5911700B22F89 /* YTP-DB.sqlite */; };
+		62603B1E1BF5AB4D00E42E1E /* YTPVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62603B1D1BF5AB4D00E42E1E /* YTPVideoViewController.m */; };
 		C009F95C18E2065E00EDB1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95B18E2065E00EDB1AF /* Foundation.framework */; };
 		C009F95E18E2065E00EDB1AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95D18E2065E00EDB1AF /* CoreGraphics.framework */; };
 		C009F96018E2065E00EDB1AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009F95F18E2065E00EDB1AF /* UIKit.framework */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		6212EDAB1BF5911700B22F89 /* YTP-DB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YTP-DB.sqlite"; sourceTree = "<group>"; };
+		62603B1C1BF5AB4D00E42E1E /* YTPVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPVideoViewController.h; sourceTree = "<group>"; };
+		62603B1D1BF5AB4D00E42E1E /* YTPVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPVideoViewController.m; sourceTree = "<group>"; };
 		C009F95818E2065E00EDB1AF /* YouTube-Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube-Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009F95B18E2065E00EDB1AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C009F95D18E2065E00EDB1AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -213,6 +216,8 @@
 				D48FA8BB1A1AD4F20031F310 /* YTPNavigationController.m */,
 				D48FA8B11A1AD4030031F310 /* YTPHomeViewController.h */,
 				D48FA8B21A1AD4030031F310 /* YTPHomeViewController.m */,
+				62603B1C1BF5AB4D00E42E1E /* YTPVideoViewController.h */,
+				62603B1D1BF5AB4D00E42E1E /* YTPVideoViewController.m */,
 				D48FA8B31A1AD4030031F310 /* YTPMoviePlayerViewController.h */,
 				D48FA8B41A1AD4030031F310 /* YTPMoviePlayerViewController.m */,
 			);
@@ -408,6 +413,7 @@
 				D48FA8B61A1AD4030031F310 /* YTPMoviePlayerViewController.m in Sources */,
 				D4CBEE301A196B2800BBF43E /* FMResultSet.m in Sources */,
 				D4CBEE391A196DB400BBF43E /* YTPVideo.m in Sources */,
+				62603B1E1BF5AB4D00E42E1E /* YTPVideoViewController.m in Sources */,
 				D4CBEE1C1A1852FA00BBF43E /* HCYoutubeParser.m in Sources */,
 				D4CBEE2E1A196B2800BBF43E /* FMDatabasePool.m in Sources */,
 				D4CBEE2D1A196B2800BBF43E /* FMDatabaseAdditions.m in Sources */,
